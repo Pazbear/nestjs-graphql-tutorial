@@ -1,0 +1,29 @@
+scalar DateTime
+
+type User {
+  githubLogin: ID!
+  nickname: String
+  email: String!
+  password: String!
+  avatar: String
+  created_at: DateTime!
+  createdTeams: [Team!]!
+}
+
+type Team {
+  id: ID!
+  name: String!
+  description: String
+  createdAt: DateTime!
+  createdBy: User!
+  postedPlans: [Plan!]!
+}
+
+type Plan {
+  id: ID!
+  title: String!
+  description: String
+  startAt: String!
+  endAt: String!
+  postedBy: Team!
+}

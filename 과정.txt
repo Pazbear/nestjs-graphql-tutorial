@@ -1,0 +1,5 @@
+$ npm i @nestjs/graphql @nestjs/apollo graphql apollo-server-express
+=> Error: Cannot find module 'ts-morph'
+=> yarn add ts-morph 설치
+
+yarn add class-validator class-transformer
